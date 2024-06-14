@@ -1,0 +1,2 @@
+cd C:\VedioGame
+mvn clean install
