@@ -102,6 +102,8 @@ public class VideoGameAPITest {
         String jsonString = response.asString();
 
         Assert.assertEquals(jsonString.contains(status),true);
+
+        System.out.println("Final changes to master branch after merging concept");
     }
 }
 
