@@ -27,7 +27,6 @@ public class VideoGameAPITest {
     public void verify_receiving_proper_response_from_http_method(String resource, String httpMethod) {
         System.out.println("validate receiving proper response from Video Game DB ");
         System.out.println("validate receiving proper response from Video Game DB  after branching");
-        System.out.println("validate receiving proper response from Video Game DB  after branching from cloned directory");
         givenRes = given().spec(helperbase.reqSpec());
         APIResource resourceapi = APIResource.valueOf(resource);
         System.out.println("-------------------------------");
@@ -45,7 +44,6 @@ public class VideoGameAPITest {
     public void the_api_call_got_success_with_status(int int1) {
         System.out.println("Validating Status code ");
         System.out.println("Validating Status code after branching ");
-        System.out.println("Validating Status code after branching from cloned directory ");
         assertEquals(response.getStatusCode(), int1);
     }
 
@@ -53,7 +51,6 @@ public class VideoGameAPITest {
     public void add_video_game_payload_and_and_and_and_and(int id, String name, String releaseDate, int reviewScore, String category, String rating) {
         System.out.println("Add payload.....");
         System.out.println("Add payload.....after branching");
-        System.out.println("Add payload.....after branching from cloned directory");
         Response Res = given().contentType("application/json")
                 .accept("application/json")
                 .body(data.addVideoGame(id,name,releaseDate,reviewScore,category,rating))
@@ -70,7 +67,6 @@ public class VideoGameAPITest {
     public void verify_user_will_be_able_to_fetch_single_game_data(int id) {
         System.out.println("Verify user is able to fetch single record");
         System.out.println("Verify user is able to fetch single record after branching");
-        System.out.println("Verify user is able to fetch single record after branching from cloned directory");
         given().when().get("http://localhost:8080/app/videogames/10")
                 .then().statusCode(200).log().body()
                 .body("videoGame.id",equalTo("10"))
@@ -82,7 +78,6 @@ public class VideoGameAPITest {
             (int id, String name, String releaseDate, int reviewScore, String category, String rating){
         System.out.println("Update video game details in the db for existing record");
         System.out.println("Update video game details in the db for existing record after branching");
-        System.out.println("Update video game details in the db for existing record after branching from cloned directory");
         given().contentType("application/json").body(data.addVideoGame(id,name,releaseDate,reviewScore,category,rating))
                 .when().put("http://localhost:8080/app/videogames/102")
                 .then().statusCode(200).log().body()
@@ -95,7 +90,6 @@ public class VideoGameAPITest {
     public void validate_video_game_is_deleted_successfully_from_db_by_id_and(int id, String status) {
         System.out.println("Verify Video game is deleted successfully");
         System.out.println("Verify Video game is deleted successfully after branching");
-        System.out.println("Verify Video game is deleted successfully after branching from cloned directory");
         Response response = given()
                 .when().delete("http://localhost:8080/app/videogames/102")
                 .then().log().body().extract().response();
@@ -103,8 +97,7 @@ public class VideoGameAPITest {
 
         Assert.assertEquals(jsonString.contains(status),true);
 
-        System.out.println("Final changes to master branch after merging concept");
-        
+        System.out.println("THis is from dev2");
     }
 }
 
