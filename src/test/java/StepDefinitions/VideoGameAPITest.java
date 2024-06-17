@@ -97,7 +97,10 @@ public class VideoGameAPITest {
 
         Assert.assertEquals(jsonString.contains(status),true);
 
+
         System.out.println("THis is from dev2");
+        System.out.println("THis is from develop");
+
     }
 }
 
