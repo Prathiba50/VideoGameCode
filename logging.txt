@@ -12,8 +12,8 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Content-Type: application/json
-Content-Length: 1301
-Date: Fri, 14 Jun 2024 11:14:51 GMT
+Content-Length: 1183
+Date: Mon, 17 Jun 2024 08:19:56 GMT
 
 [
     {
@@ -95,13 +95,5 @@ Date: Fri, 14 Jun 2024 11:14:51 GMT
         "reviewScore": 90,
         "category": "Driving",
         "rating": "Mature"
-    },
-    {
-        "id": 32,
-        "name": "FindingChemo1",
-        "releaseDate": "2024-10-07",
-        "reviewScore": 40,
-        "category": "puzzle",
-        "rating": "Universal"
     }
 ]
