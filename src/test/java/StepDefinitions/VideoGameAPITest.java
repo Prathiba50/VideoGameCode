@@ -104,10 +104,7 @@ public class VideoGameAPITest {
         Assert.assertEquals(jsonString.contains(status),true);
 
         System.out.println("Final changes to master branch after merging concept");
-
-        System.out.println("Introduce conflicts");
-        System.out.println("Introduce conflicts111");
-
+        
     }
 }
 
