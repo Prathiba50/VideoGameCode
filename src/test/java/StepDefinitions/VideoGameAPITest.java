@@ -3,17 +3,16 @@ package StepDefinitions;
 import Utils.APIResource;
 import Utils.HelperBase;
 import Utils.TestDataBuild;
-import io.cucumber.java.en.*;
-import io.cucumber.java.sl.In;
-import io.restassured.path.json.JsonPath;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
+import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertEquals;
-
-import static io.restassured.RestAssured.*;
 
 public class VideoGameAPITest {
 
