@@ -10,26 +10,90 @@ Headers:		accept=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 403 Forbidden
-Date: Fri, 21 Jun 2024 11:01:56 GMT
-X-Content-Type-Options: nosniff
-Set-Cookie: JSESSIONID.f8651ced=node018qipnzpch0e3m6k0tjgvhb2n0.node0; Path=/; HttpOnly
-Expires: Thu, 01 Jan 1970 00:00:00 GMT
-Content-Type: text/html;charset=utf-8
-X-Hudson: 1.395
-X-Jenkins: 2.452.1
-X-Jenkins-Session: 7d2ffaed
-Content-Length: 626
-Server: Jetty(10.0.20)
+HTTP/1.1 200 
+Content-Type: application/json
+Content-Length: 1183
+Date: Tue, 25 Jun 2024 07:38:34 GMT
 
-<html>
-  <head>
-    <meta http-equiv="refresh" content="1;url=/login?from=%2Fapp%2Fvideogames"/>
-    <script id="redirect" data-redirect-url="/login?from=%2Fapp%2Fvideogames" src="/static/7d2ffaed/scripts/redirect.js"/>
-  </head>
-  <body style="background-color:white; color:white;">
-Authentication required
-
-
-</body>
-</html>
+[
+    {
+        "id": 1,
+        "name": "Resident Evil 4",
+        "releaseDate": "2005-10-01",
+        "reviewScore": 85,
+        "category": "Shooter",
+        "rating": "Universal"
+    },
+    {
+        "id": 2,
+        "name": "Gran Turismo 3",
+        "releaseDate": "2001-03-10",
+        "reviewScore": 91,
+        "category": "Driving",
+        "rating": "Universal"
+    },
+    {
+        "id": 3,
+        "name": "Tetris",
+        "releaseDate": "1984-06-25",
+        "reviewScore": 88,
+        "category": "Puzzle",
+        "rating": "Universal"
+    },
+    {
+        "id": 4,
+        "name": "Super Mario 64",
+        "releaseDate": "1996-10-20",
+        "reviewScore": 90,
+        "category": "Platform",
+        "rating": "Universal"
+    },
+    {
+        "id": 5,
+        "name": "The Legend of Zelda: Ocarina of Time",
+        "releaseDate": "1998-12-10",
+        "reviewScore": 93,
+        "category": "Adventure",
+        "rating": "PG-13"
+    },
+    {
+        "id": 6,
+        "name": "Doom",
+        "releaseDate": "1993-02-18",
+        "reviewScore": 81,
+        "category": "Shooter",
+        "rating": "Mature"
+    },
+    {
+        "id": 7,
+        "name": "Minecraft",
+        "releaseDate": "2011-12-05",
+        "reviewScore": 77,
+        "category": "Puzzle",
+        "rating": "Universal"
+    },
+    {
+        "id": 8,
+        "name": "SimCity 2000",
+        "releaseDate": "1994-09-11",
+        "reviewScore": 88,
+        "category": "Strategy",
+        "rating": "Universal"
+    },
+    {
+        "id": 9,
+        "name": "Final Fantasy VII",
+        "releaseDate": "1997-08-20",
+        "reviewScore": 97,
+        "category": "RPG",
+        "rating": "PG-13"
+    },
+    {
+        "id": 10,
+        "name": "Grand Theft Auto III",
+        "releaseDate": "2001-04-23",
+        "reviewScore": 90,
+        "category": "Driving",
+        "rating": "Mature"
+    }
+]
